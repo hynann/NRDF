@@ -1,0 +1,55 @@
+data:
+  data_dir: /home/ubuntu/data/nrdf_data/NOISY_POSES/gaussian_0.785 # Training data directory
+  amass_dir: /home/ubuntu/data/nrdf_data/SAMPLED_POSES
+  sample_pt: 100000
+  num_pts: 10000
+experiment:
+  bodymodel: smpl
+  root_dir: /home/ubuntu/code/NRDF/checkpoints # Where to save checkpoints and final trained model_quat #todo
+  type: BaseTrainer
+  exp_name: amass
+  num_part: 21
+  val: False
+  test: False
+model:
+  DFNet:
+    name: 'DFNet'
+    total_dim: 960
+    in_dim: 126
+    num_parts: 21
+    output_size: 1
+    num_layers: 5
+    ff_enc: False
+    dims: 256, 512, 1024, 512, 256, 64
+    act: softplus
+    beta: 100
+  StrEnc:
+    use: True
+    name: 'StructureEncoder'
+    out_dim: 6
+    in_dim: 84
+    num_part: 21
+    pose_enc: False #todo
+    num_layers: 2
+    ff_enc: False
+    act: softplus
+    beta: 100
+    smpl_mapping: -1,-1,-1,0,1,2,3,4,5,6,7,8,8,8,11,12,13,15,16,17,18
+train:
+  device: cuda
+  batch_size: 4
+  continue_train: true
+  optimizer: Adam
+  optimizer_param: 0.0001 #1e-4  #1e-4 for lr and 0.9 for momentum
+  eval: False
+  num_worker: 30
+  max_epoch: 200000
+  loss_type: l1
+  man_loss: 0.1
+  dist: 0.5
+  eikonal: 0.0
+  body_enc: true
+  train_stage_1: 100000  #pretrain weight prediction
+  train_stage_2: 100000  #freeze weight prediction
+  square: False
+  abs: True

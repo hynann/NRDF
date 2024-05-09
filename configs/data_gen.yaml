@@ -1,0 +1,8 @@
+data_root: /home/ubuntu/data/nrdf_data
+split: train
+num_samples: 1000
+runs: 10
+k_faiss: 1000
+k_dist: 1
+mode: gaussian
+variance: 0.785
