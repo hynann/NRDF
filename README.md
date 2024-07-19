@@ -33,6 +33,7 @@
 </p>
 
 ## News
+* [2024-07-19] Added evaluation metrics
 * [2024-05-09] Code and pretrained models are released!
 
 ## Install
