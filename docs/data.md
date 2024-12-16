@@ -2,7 +2,7 @@
 The project uses [smplx](https://github.com/vchoutas/smplx) package to work with SMPL body model.
 Follow [this](https://github.com/vchoutas/smplx#downloading-the-model) link for the instruction on setting it up.
 After installing smplx make sure to set `bm_path=<path to folder with SMPL and SMPL+H models>` in configs to point to the folder with the [following](https://github.com/vchoutas/smplx#model-loading) 
-structure.
+structure. [Preprocessing](https://github.com/vchoutas/smplx/blob/main/tools/README.md#smpl-h-version-used-in-amass) SMPL+H models is necessary.
 
 ## Data preparation
 
