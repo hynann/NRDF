@@ -22,7 +22,8 @@ body_parts = {
     'legs_occ': ['left_wrist', 'right_wrist', 'head', 'torso', 'left_arm', 'right_arm'],
     'right_arm_occ': ['left_wrist', 'head', 'torso', 'left_arm', 'legs', 'left_foot', 'right_foot'],
     'left_arm_occ': ['right_wrist', 'head', 'torso', 'right_arm', 'legs', 'left_foot', 'right_foot'],
-    'arm_leg_occ': ['left_wrist', 'head', 'torso', 'left_arm', 'right_leg', 'right_foot']
+    'arm_leg_occ': ['left_wrist', 'head', 'torso', 'left_arm', 'right_leg', 'right_foot'],
+    'all': ['left_wrist', 'right_wrist', 'head', 'torso', 'left_arm', 'right_arm', 'legs', 'left_foot', 'right_foot'],
 }
 
 
