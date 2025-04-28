@@ -97,7 +97,7 @@ For this step, you have to options: you can either download our , or train it fr
 
 #### (Optional) 3.1 Download and extract the pretrained model
 
-1. Download the [pretrained FAISS model](https://nc.mlcloud.uni-tuebingen.de/index.php/s/cxDEsezSXtDJfKt) (pretrained_models/FAISS_MODEL)
+1. Download the [pretrained FAISS model](https://drive.google.com/drive/folders/1vVOLRh7DGUiB0lzbmNAw24rxdxTcgw1j?usp=drive_link) (pretrained_models/FAISS_MODEL)
 2. Once downloaded, extract it into `DATA_ROOT`
 
 #### (Optional) 3.2 Train from scratch

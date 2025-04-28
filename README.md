@@ -41,7 +41,7 @@ The steps are described in [docs/installation.md](./docs/installation.md).
 
 ## Download pre-trained models
 
-The pre-trained NRDF model can be obtained from the [link](https://nc.mlcloud.uni-tuebingen.de/index.php/s/cxDEsezSXtDJfKt) (amass_softplus...)
+The pre-trained NRDF model can be obtained from the [link](https://drive.google.com/drive/folders/1vVOLRh7DGUiB0lzbmNAw24rxdxTcgw1j?usp=drive_link) (amass_softplus...)
 
 You can extract the downloaded NRDF model into a manually created folder `checkpoints` within the project directory
 
