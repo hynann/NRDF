@@ -112,7 +112,7 @@ python lib/exp/partial_ik.py --input_path <YOUR_INPUT_PATH> --model_dir <MODEL_D
 
 ## Monocular 3D pose estimation from images
 
-Coming soon
+Please check `lib/exp/hps.py`
 
 
 ## Citation
